@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.eot');
+    src: url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('fonts/Montserrat-Bold.woff') format('woff'),
+        url('fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.eot');
+    src: url('fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat-Light.woff') format('woff'),
+        url('fonts/Montserrat-Light.ttf') format('truetype'),
+        url('fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+body, html {
+    font-size: 16px; 
+    color: rgba(0, 0, 0, .87);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 30px 87px;
+    z-index: 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar nav {
+    float: left;
+}
+
+.navbar nav a {
+    color: #9f9f9f;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0 53px;
+}
+
+.navbar nav a:hover, .navbar nav a.active {
+    color: #000;
+}
+
+.reseaux {
+    float: right;
+}
+
+.reseaux a {
+    padding: 0 12px;
+    opacity: 0.75;
+}
+
+.reseaux a:hover {
+    opacity: 1;
+}
+
+.social {
+    width: 25px;
+}
+
+.banniere {
+    height: 427px;
+    background: no-repeat center center / cover url('images/header-photo.jpg');
+}
+
+.main {
+    background: #FFF; 
+    width: calc(100% - 375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+    position: relative;
+}
+
+.sidebar {
+    position: relative;
+    width: 375px;
+    padding: 40px;
+    font-size: 17px;
+    z-index: 1;
+    background: #FBFBFB;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: black;
+    margin: 15px 0;
+}
+
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 6px 0;
+}
+
+.sidebar a {
+    color: #9F9F9F;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar hr {
+    border: none;
+    background: #C4C4C4;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.article {
+    position: relative;
+    margin: 50px 0;
+    padding-left: 333px;
+    min-height: 203px;
+}
+
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    margin-right: 25px;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+.article-title {
+    font-size: 1.7 rem;
+    line-height: 1.1;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.corps {
+    display: flex;
+}
+
+.footer {
+    clear: both;
+    color: black;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+}
+
